@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-height: 100vh;
+}
+header {
+  height: 10vh;
+}
+
+.sidebar {
+  height: 90vh;
+  a {
+    transition: all 0.3s ease-in-out;
+  }
+  a:hover {
+    background-color: coral;
+    box-shadow: 0 0 15px;
+  }
+}

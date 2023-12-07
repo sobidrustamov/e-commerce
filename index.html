@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <script>
+    if (!token) {
+      window.location.replace("pages/login.html")
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"
+    integrity="sha512-b94Z6431JyXY14iSXwgzeZurHHRNkLt9d6bAHt7BZT38eqV+GyngIi/tVye4jBKPYQ2lBdRs0glww4fmpuLRwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="/js/app.js"></script>
+  <link rel="stylesheet" href="styles/css/minified/main.min.css">
+  <title>Dashboard</title>
+</head>
+
+<body class="h-screen ">
+  <header class="py-3 bg-gray-300">
+    <div class="container px-5 flex justify-content-between">
+      <a href="#" class="text-3xl">Logo</a>
+      <button id="logout" class="btn btn-primary">Log out</button>
+    </div>
+  </header>
+  <main class="flex ">
+    <div class="sidebar w-1/6 bg-gray-100 flex flex-col text-2xl">
+      <a href="#" class="p-4">Dashboard</a>
+      <a href="pages/users.html" class="p-4">Users</a>
+      <a href="#" class="p-4">Category</a>
+      <a href="#" class="p-4">Product</a>
+    </div>
+    <div class="main-info w-5/6 bg-gray-200">
+
+    </div>
+
+  </main>
+</body>
+
+</html>
